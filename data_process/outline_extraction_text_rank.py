@@ -1,7 +1,7 @@
 from summa.summarizer import summarize
 import os
 print(os.getcwd())
-from utils import parse_corp
+from utils.utils import parse_corp
 import argparse
 
 

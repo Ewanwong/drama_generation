@@ -1,4 +1,4 @@
-import generator
+import utils.generator as generator
 import os
 import pickle
 import random

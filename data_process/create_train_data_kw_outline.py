@@ -2,11 +2,11 @@ import os
 import argparse
 import sys
 import pickle
-from parse_data import parse_corp_tokenized
-from keyword_extraction import perform_extr, write_outline
-from outline_extraction_text_rank import outline_by_textrank
-from utils import save_pkl
-from parse_data import split_data
+from data_process.parse_data import parse_corp_tokenized
+from data_process.keyword_extraction import perform_extr, write_outline
+from data_process.outline_extraction_text_rank import outline_by_textrank
+from utils.utils import save_pkl
+from data_process.parse_data import split_data
 
 def get_filenames(dir_path:str, extension='.txt'):
     fis = []

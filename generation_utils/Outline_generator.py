@@ -1,8 +1,8 @@
 import sys
 import os
-import gpt2_fine_tuning
-from keyword_extraction import apply_keyw_extraction
-from create_train_data_kw_outline import get_filenames
+import gpt2_fine_tuning as gpt2_fine_tuning
+from data_process.keyword_extraction import apply_keyw_extraction
+from data_process.create_train_data_kw_outline import get_filenames
 
 SPECIAL_TOKENS = {"bos_token": "<BOS>",
                   "eos_token": "<EOS>",

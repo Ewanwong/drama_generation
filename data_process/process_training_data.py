@@ -1,13 +1,13 @@
 import glob
 from transformers import AutoTokenizer, AutoModelWithLMHead
 
-import generation_utils
-from outline_extraction_text_rank import outline_by_textrank, get_speakers
+import utils.generation_utils as generation_utils
+from data_process.outline_extraction_text_rank import outline_by_textrank, get_speakers
 import os
 from nltk.tokenize import sent_tokenize
 from collections import defaultdict
 import pickle
-import summarize
+import utils.summarize as summarize
 from tqdm import tqdm
 import multiprocessing
 

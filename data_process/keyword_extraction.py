@@ -5,11 +5,11 @@ import argparse
 import nltk
 import numpy as np
 from multi_rake import Rake
-from parse_data import parse_corp_tokenized
+from data_process.parse_data import parse_corp_tokenized
 from keybert import KeyBERT
 from sklearn.feature_extraction.text import TfidfVectorizer
 from nltk.corpus import stopwords
-from outline_extraction_text_rank import outline_by_textrank
+from data_process.outline_extraction_text_rank import outline_by_textrank
 import pytextrank
 
 nltk.download('stopwords')

@@ -1,11 +1,11 @@
 import torch
 
-import gpt2_fine_tuning
-from char_support import extract_character_names
-from outline_extraction_text_rank import get_speakers
-import generation_utils
+import gpt2_fine_tuning as gpt2_fine_tuning
+from utils.char_support import extract_character_names
+from data_process.outline_extraction_text_rank import get_speakers
+import utils.generation_utils as generation_utils
 
-import summarize
+import utils.summarize as summarize
 
 SPECIAL_TOKENS = {"bos_token": "<BOS>",
                   "eos_token": "<EOS>",
