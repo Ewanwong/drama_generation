@@ -1,0 +1,2 @@
+# generate scenes given outlines using model2
+python3 generate_scenes.py fine_tuned_model2 data_split/test --use_outline True --outline_folder outline_split/test --n_scenes 5 --write_path model_output.txt
